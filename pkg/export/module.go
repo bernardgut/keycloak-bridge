@@ -31,7 +31,7 @@ func (m *Module) GetRealms(ctx context.Context) ([]string, error) {
 	var accessToken = "TOKEN=="
 	var realms, err = m.kc.GetRealms(accessToken)
 	if err != nil {
-		return res, errors.Wrap(err, "could not get list of realms")
+		return res, errors.Wrap(err, "cannotGetListOfRealms")
 	}
 
 	for _, realm := range realms {
