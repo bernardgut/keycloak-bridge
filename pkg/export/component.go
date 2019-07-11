@@ -8,6 +8,11 @@ import (
 	"github.com/pkg/errors"
 )
 
+var (
+	// ComponentName is the name of the component.
+	ComponentName = "keycloak-bridge"
+)
+
 type component struct {
 	componentName    string
 	componentVersion string
